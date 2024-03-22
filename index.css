@@ -13,6 +13,46 @@ li {
     list-style: none;
 }
 
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 5px 25px;
+    border: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+}
+::placeholder {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -34,4 +74,136 @@ li {
 .menu li {
     padding: 5px 14px;
 }
-  
+
+.bio {
+    padding: 15px 50px;
+    background-color: #EDC0E3;
+    display: flex;
+    justify-content: space-between;
+}
+.bio-header {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+}
+.bio-description {
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 70%;
+}
+.bio-title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.bio-desc {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about {
+    margin-top: 30px;
+    /* margin-bottom: 50px; */
+    padding: 20px;
+}
+.about-title {
+    text-align: center;
+}
+.about-description {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.contact {
+    padding: 20px;
+}
+.contact-title {
+    margin-top: 10px;
+    font-size: 40px;
+}
+.contact-description {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.submit-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    background-color: #EDC0E3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    padding: 10px 20px;
+}
+footer .social {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+footer .facebook {
+    margin-right: 15px;
+}
+footer .footer-desc {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .bio {
+        padding: 15px;
+    }
+    .bio-header {
+        flex: 1;
+        text-align: center;
+    }
+
+    .bio-description {
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    p{
+        font-size: 14px;
+    }
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio-header {
+        flex: 1;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .bio-description {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .bio-desc {
+        margin-top: 15px;
+        font-weight: 400;
+    }
+
+    .contact-title {
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
